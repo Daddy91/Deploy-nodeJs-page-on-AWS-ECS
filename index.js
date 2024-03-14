@@ -1,3 +1,5 @@
+const express = require('express');
+const app = express();
 // Define a health check endpoint
 app.use('/health', (req, res) => {
   res.status(200).send('OK'); // Respond with a status code of 200 and 'OK'
